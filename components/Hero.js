@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import heroImage from '@/public/heroimage.jpg';
 import {BsArrowRight} from 'react-icons/bs'
+import Link from 'next/link';
 
 function Hero() {
   return (
@@ -18,11 +19,16 @@ function Hero() {
         <div className='blur-overlay absolute top-1/2 w-full text-center'>
             <p className='text-sm sm:text-5xl font-extrabold text-white'>CHEVRON FOOD & FASHION FAIR</p>
             <p className='text-sm sm:text-3xl font-extrabold text-white'>28-30 SEPTEMBER 2023</p>
-        
-            <button className=' text-white bg-black px-10 py-4 shadow-md rounded-md font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150'>
-                Apply Now
-            </button>
+
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfzb4MDLbbwQc7PGBdfjAW6pDvSivc2juc-hE8OMrYMRx518w/viewform?usp=sf_link" target="_blank">
+            <div>
+              <button href="" className=' text-white bg-black px-10 py-4 shadow-md rounded-md font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150'>
+                  Apply Now
+              </button>
+            </div>
+          </Link>
         </div>
+        
     </div>
   );
 }
