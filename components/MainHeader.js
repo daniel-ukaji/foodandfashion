@@ -8,7 +8,7 @@ function MainHeader() {
     <div className="bg-white p-2 flex justify-between items-center">
         <div className="flex items-center">
             <div>
-                <Image src={logo} alt="" width="60" height="60" />
+                <Image className='mr-3' src={logo} alt="" width="35" height="35" />
             </div>
             <h1 className="font-bold text-xl text-black">
                 CHEVRON CEMCS
